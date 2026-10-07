@@ -18,6 +18,7 @@ import {
   showActivityNotification,
 } from '../utils/notifications'
 import { Link, useNavigate } from 'react-router-dom'
+import { API_BASE_URL } from '../utils/api'
 
 function Settings() {
   const navigate = useNavigate()
@@ -68,7 +69,7 @@ function Settings() {
       return
     }
 
-    fetch('http://localhost:8080/api/preferences', {
+    fetch(`${API_BASE_URL}/api/preferences`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ token }),
@@ -143,7 +144,7 @@ function Settings() {
 
     setNotificationsLoading(true)
     try {
-      const response = await fetch('http://localhost:8080/api/preferences', {
+      const response = await fetch(`${API_BASE_URL}/api/preferences`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -221,7 +222,7 @@ function Settings() {
 
     try {
       const response = await fetch(
-        'http://localhost:8080/api/auth/change-password',
+        `${API_BASE_URL}/api/auth/change-password`,
         {
           method: 'POST',
           headers: {
@@ -277,7 +278,7 @@ function Settings() {
     try {
       if (token) {
         await fetch(
-          'http://localhost:8080/api/auth/logout',
+          `${API_BASE_URL}/api/auth/logout`,
           {
             method: 'POST',
             headers: {
@@ -323,7 +324,7 @@ function Settings() {
 
   try {
     const response = await fetch(
-      'http://localhost:8080/api/profile/delete',
+      `${API_BASE_URL}/api/profile/delete`,
       {
         method: 'POST',
         headers: {

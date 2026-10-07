@@ -1,0 +1,12 @@
+.git
+.github
+frontend/node_modules
+frontend/dist
+backend/database/*.db
+backend/database/*.db-*
+backend/*.exe
+backend/**/*.o
+token.txt
+**/.env
+**/.env.*
+!frontend/.env.example

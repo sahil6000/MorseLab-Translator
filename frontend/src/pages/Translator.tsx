@@ -13,6 +13,7 @@ import {
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { notifyActivityIfEnabled } from '../utils/notifications'
+import { API_BASE_URL } from '../utils/api'
 
 type TranslationMode = 'text-to-morse' | 'morse-to-text'
 
@@ -78,7 +79,7 @@ if (!token) {
   return
 }
 
-const response = await fetch(`http://localhost:8080${endpoint}`, {
+const response = await fetch(`${API_BASE_URL}${endpoint}`, {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
@@ -175,8 +176,8 @@ const response = await fetch(`http://localhost:8080${endpoint}`, {
           : 'MORSE_TO_TEXT'
 
       const endpoint = editingSavedId
-        ? 'http://localhost:8080/api/saved/update'
-        : 'http://localhost:8080/api/saved'
+        ? `${API_BASE_URL}/api/saved/update`
+        : `${API_BASE_URL}/api/saved`
 
       const method = editingSavedId ? 'POST' : 'POST'
 

@@ -13,6 +13,7 @@ import {
 } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
+import { API_BASE_URL } from '../utils/api'
 
 function Dashboard() {
   const [totalTranslations, setTotalTranslations] = useState(0)
@@ -49,7 +50,7 @@ function Dashboard() {
         setError('')
 
         const response = await fetch(
-          'http://localhost:8080/api/statistics',
+          `${API_BASE_URL}/api/statistics`,
           {
             method: 'POST',
             headers: {
@@ -90,7 +91,7 @@ function Dashboard() {
         )
 
 const historyResponse = await fetch(
-  'http://localhost:8080/api/history',
+  `${API_BASE_URL}/api/history`,
   {
     method: 'POST',
     headers: {

@@ -10,6 +10,7 @@ import {
 } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { API_BASE_URL } from '../utils/api'
 
 type HistoryItem = {
   id: number
@@ -80,7 +81,7 @@ function History() {
         setError('')
 
         const response = await fetch(
-          'http://localhost:8080/api/history',
+          `${API_BASE_URL}/api/history`,
           {
             method: 'POST',
             headers: {
@@ -188,7 +189,7 @@ const deleteTranslation = async (historyId: number) => {
     setError('')
 
     const response = await fetch(
-      'http://localhost:8080/api/history',
+      `${API_BASE_URL}/api/history`,
       {
         method: 'DELETE',
         headers: {

@@ -14,6 +14,7 @@ import {
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { notifyActivityIfEnabled } from '../utils/notifications'
+import { API_BASE_URL } from '../utils/api'
 
 type ProfileData = {
   id: number
@@ -71,7 +72,7 @@ function Profile() {
       }
 
       try {
-        const response = await fetch('http://localhost:8080/api/profile', {
+        const response = await fetch(`${API_BASE_URL}/api/profile`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -128,7 +129,7 @@ function Profile() {
 
     try {
       const response = await fetch(
-        'http://localhost:8080/api/profile/update',
+        `${API_BASE_URL}/api/profile/update`,
         {
           method: 'POST',
           headers: {

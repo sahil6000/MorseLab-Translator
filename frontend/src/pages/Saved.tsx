@@ -10,6 +10,7 @@ import {
 } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import { API_BASE_URL } from '../utils/api'
 
 type SavedItem = {
   id: number
@@ -62,7 +63,7 @@ function Saved() {
         setError('')
 
         const response = await fetch(
-          'http://localhost:8080/api/saved/list',
+          `${API_BASE_URL}/api/saved/list`,
           {
             method: 'POST',
             headers: {
@@ -124,7 +125,7 @@ function Saved() {
       setError('')
 
       const response = await fetch(
-        'http://localhost:8080/api/saved',
+        `${API_BASE_URL}/api/saved`,
         {
           method: 'DELETE',
           headers: {

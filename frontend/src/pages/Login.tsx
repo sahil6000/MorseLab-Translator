@@ -3,6 +3,7 @@ import { useState } from 'react'
 import type { FormEvent } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { notifyActivityIfEnabled } from '../utils/notifications'
+import { API_BASE_URL } from '../utils/api'
 
 function Login() {
   const navigate = useNavigate()
@@ -33,7 +34,7 @@ function Login() {
 
     try {
       const response = await fetch(
-        'http://localhost:8080/api/auth/login',
+        `${API_BASE_URL}/api/auth/login`,
         {
           method: 'POST',
           headers: {

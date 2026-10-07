@@ -8,6 +8,7 @@ import {
 } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
+import { API_BASE_URL } from '../utils/api'
 
 type StatisticsData = {
   total_translations: number
@@ -44,7 +45,7 @@ function Statistics() {
         setError('')
 
         const response = await fetch(
-          'http://localhost:8080/api/statistics',
+          `${API_BASE_URL}/api/statistics`,
           {
             method: 'POST',
             headers: {

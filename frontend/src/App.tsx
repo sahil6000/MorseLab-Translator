@@ -11,6 +11,7 @@ import Saved from './pages/Saved'
 import Statistics from './pages/Statistics'
 import Profile from './pages/Profile'
 import Settings from './pages/Settings'
+import { API_BASE_URL } from './utils/api'
 
 /* =========================================================
    AUTHENTICATION CHECK
@@ -53,7 +54,7 @@ function ProtectedRoute({
       return
     }
 
-    fetch('http://localhost:8080/api/auth/validate', {
+    fetch(`${API_BASE_URL}/api/auth/validate`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ token }),
