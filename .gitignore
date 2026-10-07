@@ -1,0 +1,15 @@
+# Local credentials and generated data
+token.txt
+/backend/*.exe
+/backend/src/*.o
+/backend/tests/*.exe
+/backend/database/*.db
+/backend/database/*.db-shm
+/backend/database/*.db-wal
+/frontend/node_modules/
+/frontend/dist/
+/.codex-validation/
+
+
+# All compiled object files
+*.o

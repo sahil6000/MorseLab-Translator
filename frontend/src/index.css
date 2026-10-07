@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+html.compact-mode .compact-translator > main {
+  padding-block: 1.5rem !important;
+}
+
+html.compact-mode .compact-translator-heading {
+  margin-bottom: 1.5rem !important;
+}
+
+html.compact-mode .compact-translation-card {
+  padding: 1rem !important;
+}
+
+html.compact-mode .compact-translation-grid {
+  gap: 1rem !important;
+}
+
+html.compact-mode .compact-translation-input,
+html.compact-mode .compact-translation-output,
+html.compact-mode .compact-translation-content,
+html.compact-mode .compact-translation-output > div {
+  min-height: 13rem !important;
+}
+
+html.compact-mode .compact-translator-info-card {
+  padding: 1rem !important;
+}
+
+html.compact-mode .compact-history > main {
+  padding-block: 1.5rem !important;
+}
+
+html.compact-mode .compact-history article {
+  padding: 1rem !important;
+}
+
+html.compact-mode .compact-history [class*='min-h-'] {
+  min-height: 18rem !important;
+}
