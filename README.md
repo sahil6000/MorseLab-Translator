@@ -1,47 +1,20 @@
-::: {align="center"}
 # 🟣 MORSELAB
 
-### Advanced Full-Stack Morse Code Translator
+## Advanced Full-Stack Morse Code Translator
 
-**DSA in C • Custom C HTTP Backend • SQLite • React • TypeScript •
-Vite**
+**DSA in C • Custom C HTTP Backend • SQLite • React • TypeScript • Vite**
 
-```{=html}
-<p>
-```
-`<a href="https://github.com/sahil6000/MorseLab-Translator">`{=html}
-`<img src="https://img.shields.io/badge/GitHub-MorseLab--Translator-181717?style=for-the-badge&logo=github" alt="GitHub">`{=html}
-`</a>`{=html}
-`<a href="https://sahil6000.github.io/MorseLab-Translator/">`{=html}
-`<img src="https://img.shields.io/badge/Live%20Frontend-GitHub%20Pages-222222?style=for-the-badge&logo=githubpages" alt="Live Frontend">`{=html}
-`</a>`{=html}
-`<a href="https://morselab-translator.onrender.com/api/health">`{=html}
-`<img src="https://img.shields.io/badge/Backend-Live-46E3B7?style=for-the-badge&logo=render" alt="Backend">`{=html}
-`</a>`{=html}
-```{=html}
-</p>
-```
-```{=html}
-<p>
-```
-`<img src="https://img.shields.io/badge/Frontend-React%2019%20%7C%20TypeScript%20%7C%20Vite-61DAFB?style=flat-square&logo=react" alt="Frontend">`{=html}
-`<img src="https://img.shields.io/badge/Backend-C%20%7C%20libmicrohttpd-A8B9CC?style=flat-square&logo=c" alt="Backend">`{=html}
-`<img src="https://img.shields.io/badge/Database-SQLite-003B57?style=flat-square&logo=sqlite" alt="SQLite">`{=html}
-`<img src="https://img.shields.io/badge/Styling-Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss" alt="Tailwind CSS">`{=html}
-`<img src="https://img.shields.io/badge/Build-Vite-646CFF?style=flat-square&logo=vite" alt="Vite">`{=html}
-```{=html}
-</p>
-```
-```{=html}
-<p>
-```
-A complete full-stack application that demonstrates how classical data
-structures and algorithms can be integrated into a real web application
-rather than being implemented as isolated academic exercises.
-```{=html}
-</p>
-```
-:::
+[![GitHub Repository](https://img.shields.io/badge/GitHub-MorseLab--Translator-181717?style=for-the-badge&logo=github)](https://github.com/sahil6000/MorseLab-Translator)
+[![Live Frontend](https://img.shields.io/badge/Live%20Frontend-GitHub%20Pages-222222?style=for-the-badge&logo=githubpages)](https://sahil6000.github.io/MorseLab-Translator/)
+[![Backend](https://img.shields.io/badge/Backend-Live-46E3B7?style=for-the-badge&logo=render)](https://morselab-translator.onrender.com/api/health)
+
+![React](https://img.shields.io/badge/Frontend-React%2019%20%7C%20TypeScript%20%7C%20Vite-61DAFB?style=flat-square&logo=react)
+![C](https://img.shields.io/badge/Backend-C17%20%7C%20libmicrohttpd-A8B9CC?style=flat-square&logo=c)
+![SQLite](https://img.shields.io/badge/Database-SQLite-003B57?style=flat-square&logo=sqlite)
+![Tailwind CSS](https://img.shields.io/badge/Styling-Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss)
+![Vite](https://img.shields.io/badge/Build-Vite-646CFF?style=flat-square&logo=vite)
+
+> A complete full-stack application demonstrating how Data Structures and Algorithms can be integrated into a real-world web application using a custom C backend, SQLite database, and modern React frontend.
 
 ------------------------------------------------------------------------
 
